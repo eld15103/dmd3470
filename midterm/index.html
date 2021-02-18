@@ -1,0 +1,198 @@
+<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang=""><head>
+    <meta charset="utf-8">
+    <title>CSS Showcase Midterm</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bhe4ibo.css">
+  
+    <meta name="theme-color" content="#fafafa">
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.996.0" data-gr-ext-installed="" class="dark-mode"><header>
+    <div id="header-top">
+      <h1>WELCOME TO</h1>
+      <h2>THE <span id="light">LIGHT</span><span id="dark">DARK</span> SIDE</h2>
+      <button class="type1" onclick="darkside()">Switch Sides</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a class="navclick" href="#about">ABOUT</a></li>
+        <li><a class="navclick" href="#designing">DESIGNING</a></li>
+        <li><a class="navclick" href="#coding">CODING</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+    <main>
+    <div id="about" class="center">
+        <h3>WHAT IS DARK MODE?</h3>
+        <div id="about-content">
+        <p>Recently, dark mode has become increasingly popular on mobile devices and even certain destktop applications. Dark mode utilizes a darker background with lighter text.
+          Dark Mode allows for websites to be more accessible for people with light sensitivity or vision problems. With how heavy technology plays a role in today’s society, it is important to make the user experience as accessible as possible.
+          If a user has their browser settings set to a dark mode preference, websites that have implemented a dark mode, such as this one, will automatically be viewed in that preference. Websites can also provide a toggle that allows users to go between the two themes without changing their settings.
+        </p>
+        <img class="center" src="images/example.png" alt="Light vs Dark Mode">
+      </div>
+    </div>
+    <div id="designing" class="center">
+      <h3>
+        DESIGNING A DARK THEME
+      </h3>
+      <p>
+        A proper dark theme is more than just the inverse of the light theme colors.
+        <br>
+        There are four main properties to keep in mind:
+      </p>
+      <div id="four">
+        <div id="contrast">
+          <h4>Contrast</h4>
+          <p>Dark themes should have a contrast high contrast level.</p>
+        </div>
+        <div id="depth">
+          <h4>Depth</h4>
+          <p>Express elevation and space by creating depth.</p>
+        </div>
+        <div id="desat">
+          <h4>Desaturation</h4>
+          <p>Primary colors should be desaturated.</p>
+        </div>
+        <div id="limit">
+          <h4>Limited Color</h4>
+          <p>Limit the amount of color accents.</p>
+        </div>
+      </div>
+      <p>Dark themes are built using layers. One layer is the background, this layer is usually #121212.
+        It is important to note that if designing for Apple, Apple standards are a background of #000000. A good way to remember this is that "Only a Sith deals in absolutes." 
+        Only Apple tends to use a pure black for their background color. The other layer
+        is a semi-transparent overlay. When choosing an overlay, there is the option of white or a shade of color. This shade will be referred to as the primary.
+        In dark mode, the primary color will shift to a desaturated color shade. Choosing a color shade can help to keep the brand image while in dark mode. 
+      </p>
+      <img class="center" src="images/example-tint.png" alt="An example of a tint">
+      
+    </div>
+    <div id="coding" class="center">
+      <h3>CODING A DARK THEME</h3>
+      <p>Firstly, make sure your website is fully created in HTML before adding the dark theme through CSS. This will make it much easier to keep track of variables.
+        There are two ways to go about implementing a dark theme.
+      </p>
+      <div id="query">
+        <div>
+        <p>The first way to implement a dark theme is to automatically do it for the user. To determine which theme the website should display to the user upon first loading, the user's settings will be read. This can be done by creating a media query.
+          Prefers-color-scheme checks if your user preferes light or dark off of their browser settings. Based off of those settings, you can set certain settings for both themes.
+          Keep in mind, only certain browsers allow you to read the user's settings.
+        </p>
+        <pre>      @media (prefers-color-scheme: light){
+          h1{
+            color: black;
+          }
+        }
+        @media (prefers-color-scheme: dark){
+          h1{
+            color: white;
+          }
+        }
+        </pre>
+      </div>
+        <img class="center" src="images/media.JPG" alt="Light vs Dark Mode">
+    </div>
+      <p>If you would rather make a toggle between the light and dark mode, the easiest way is to use a tiny bit of JavaScript.
+        JavaScript allows for a function to be made that can determine whether or not the dark mode has been activated.
+        When the toggle is switched, dark mode will be activated. When dark mode is activated, all the CSS variables for dark mode will be activated.
+        If our toggle class name were to be called dark-mode, the CSS code would look like:
+      </p>
+      <div id="tog">
+        <pre>      h1{
+          color: black;
+        }
+        .dark-mode h1{
+          color: white;
+        }
+      </pre>
+   
+      
+      <a href="https://codepen.io/henryegloff/pen/Eqwzeb"><img class="center" src="images/toggle.JPG" alt="Example of toggle"></a>
+      </div>
+      <p>If you want to read the user's settings and have a toggle (like this website), you will again use JavaScript.
+        The first part is creating the toggle (for more about the toggle, click on the CodePen link above) and the second part
+        activates the toggle upon first loading the website based off of the user's settings. By using this way, you do not have to use media queries in your CSS.
+        The JavaScript can be placed into your HTML like so:
+      </p>
+      <img class="center" id="java" src="images/java.JPG" alt="JavaScript Screenshot">
+  
+      <p>
+        Now to add in the primary color and create depth, we use rgba instead of hex values. 
+        RGBA allows us to control the alpha transparency through the "a" value.
+        If white is the primary color, the hex value #FFFFFF will be converted to RGB(255,255,255).
+        For the alpha value, the higher the percentage, the more it is seen. In dark mode,
+        the more emphasized areas should have a 6% alpha value, and the less emphasized can have a 3%.
+        Notice how on this website, the header and footer have a 6% alpha value, whereas the body has 3%.
+        The font color should also be converted into rgba in dark mode. For emphasized text, the alpha value
+        should be 87%. If there is any text that does not require high empahsis, consider dropping it to a medium
+        emphasis of a 60% alpha value.
+      </p>
+      <pre>      .dark-mode body{
+          background-color: #121212;
+        }
+  
+        .dark-mode h1{
+          color: (255,255,255,87%);
+          background-color: (255,255,255,6%)
+        }
+        
+      </pre>
+    </div>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+  
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+      function darkside() {
+        var element = document.body;
+        element.classList.toggle("dark-mode")
+      }
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      // dark mode
+      var element = document.body;
+      element.classList.toggle("dark-mode")
+  }
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async=""></script>
+  </main>
+  
+  
+  <footer>
+    <h1>HELPFUL LINKS</h1>
+    <ul>
+      <li><a href="https://blog.weekdone.com/why-you-should-switch-on-dark-mode/">BENEFITS OF DARK MODE</a></li>
+      <li><a href="https://material.io/design/color/dark-theme.html">MATERIAL DESIGN STANDARDS</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">BROWSER COMPATIBILITY</a></li>
+    </ul>
+  </footer>
+  
+  
+  <div id="highlighter--hover-tools" style="display: none;">
+      <div id="highlighter--hover-tools--container">
+          <div class="highlighter--icon highlighter--icon-copy" title="Copy"></div>
+          <div class="highlighter--separator"></div>
+          <div class="highlighter--icon highlighter--icon-change-color" title="Change Color"></div>
+          <div class="highlighter--separator"></div>
+          <div class="highlighter--icon highlighter--icon-delete" title="Delete"></div>
+      </div>
+  </div></body></html>
