@@ -1,0 +1,37 @@
+.so-widget-sow-headline-default-c86dbbd9dcf4 .sow-headline-container p.sow-headline {
+  font-family: Work Sans;
+  font-weight: 700;
+  text-align: left;
+  
+  line-height: 1.4em;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.so-widget-sow-headline-default-c86dbbd9dcf4 .sow-headline-container h3.sow-sub-headline {
+  text-align: center;
+  
+  line-height: 1.4em;
+  
+  
+  
+}
+.so-widget-sow-headline-default-c86dbbd9dcf4 .sow-headline-container .decoration {
+  line-height: 0em;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.so-widget-sow-headline-default-c86dbbd9dcf4 .sow-headline-container .decoration .decoration-inside {
+  height: 1px;
+  display: inline-block;
+  border-top: 5px solid #ee3324;
+  width: 100%;
+  max-width: 20;
+}
+.so-widget-sow-headline-default-c86dbbd9dcf4 .sow-headline-container *:first-child {
+  margin-top: 0 !important;
+}
+.so-widget-sow-headline-default-c86dbbd9dcf4 .sow-headline-container *:last-child {
+  margin-bottom: 0 !important;
+}
