@@ -1,0 +1,46 @@
+/*
+    Styles for specific sites only - not the Network Admin Dashboard
+*/
+/* 
+    Created on : Nov 30, 2018, 2:02:53 PM
+    Author     : jlz18002
+*/
+
+/* Color the Plugins top level menu item */
+#menu-plugins:hover a[href="plugins.php"]{
+    color: #FFFFFF !important;
+}
+
+#menu-plugins.current a[href="plugins.php"]{
+    color: #FFFFFF !important;
+}
+
+#menu-plugins a[href="plugins.php"]{
+    color: #D54E21 !important;
+}
+
+#menu-plugins:hover .dashicons-admin-plugins::before{
+    color: #FFFFFF !important;
+}
+
+#menu-plugins.current .dashicons-admin-plugins::before{
+    color: #FFFFFF !important;
+}
+
+#menu-plugins .dashicons-admin-plugins::before{
+    color: #D54E21 !important;
+}
+
+/* Hide plugin ads before removing them with Javascript */
+
+body.tools_page_velvet-blues-update-urls div.wrap form + p{
+    display: none !important;
+}
+
+.ga_events_featurebox{
+    display: none !important;
+}
+
+.ga_events_sidebar{
+    display: none !important;
+}

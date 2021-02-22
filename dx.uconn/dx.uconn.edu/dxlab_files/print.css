@@ -1,0 +1,51 @@
+/*
+
+	Cornerstone Print Styles
+	Andrew Bacon of UITS WEB DEV
+	Aug 2015
+	
+*/
+#uc-utility,
+#nav-wrapper,
+a:after,
+#masthead .searchform {
+  display: none; }
+
+#site-title.hidden-xs {
+  display: inline-block !important; }
+
+#site-title.hidden-xs:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+/* start commented backslash hack \*/
+* html #site-title.hidden-xs {
+  height: 1% !important; }
+
+#site-title.hidden-xs {
+  display: block !important; }
+
+/* close commented backslash hack */
+#masthead:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+#masthead {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html #masthead {
+  height: 1%; }
+
+#masthead {
+  display: block; }
+
+/* close commented backslash hack */
