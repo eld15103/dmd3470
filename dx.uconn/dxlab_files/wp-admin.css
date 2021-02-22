@@ -1,0 +1,395 @@
+.wp-full-overlay {
+  z-index: auto;
+}
+
+img.avatar,
+#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img,
+.update-nag {
+  display: none !important;
+}
+
+#wp-admin-bar-wp-logo > .ab-item .ab-icon {
+  background-image: url(logo.png);
+  background-position: 0 1px !important;
+  background-color: inherit !important;
+  width: 120px;
+}
+
+#wp-admin-bar-wp-logo-default,
+#wp-admin-bar-wp-logo-external {
+  display: none !important;
+}
+
+#wp-admin-bar-root-default,
+#wp-admin-bar-wp-logo,
+#wp-admin-bar-wp-logo .ab-item,
+#wp-admin-bar-wp-logo .ab-item .ab-icon,
+#wp-admin-bar-root-default:hover,
+#wp-admin-bar-wp-logo:hover,
+#wp-admin-bar-wp-logo .ab-item:hover,
+#wp-admin-bar-wp-logo .ab-item .ab-icon:hover {
+  background-color: #464646 !important;
+}
+
+#wpadminbar #wp-admin-bar-my-account.with-avatar #wp-admin-bar-user-actions > li {
+  margin-left: 0 !important;
+}
+
+#menu-plugins {
+ /* display: none;*/
+}
+
+/* 
+
+		wpmuDEV overrides
+
+*/
+
+/* Custom CSS page */
+.instructions {
+    color: #8a6d3b ;
+    background-color: #fcf8e3 ;
+    border: 1px solid #faebcc ;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.instructions span {
+padding:5px 10px; 
+}
+
+/* --- Recent Custom Posts */
+/* hide custom fields option */
+a.rcpt-toggle_custom_fields {
+  display: none !important;
+}
+
+/* TinyMCE Advanced Settings */
+#tadvadmin #tadvWarnmsg,
+#tadvadmin #too_long,
+#tadvadmin #tadvpalettediv,
+#tadvadmin table,
+#tadvadmin .button {
+  display: none !important;
+}
+
+/**/
+/* SuperCache Settings */
+#wpbody-content div.wrap div#nav h2.themes-php a.nav-tab {
+  visibility: hidden;
+}
+
+#wpbody-content div.wrap div#nav h2.themes-php a.nav-tab:first-child {
+  visibility: visible;
+}
+
+/**/
+/* Gravity Forms */
+#gform_tab_container #tab_settings,
+#gform_tab_container #tab_uninstall,
+.gforms_settings_wrap .gform_tabs li:first-child,
+.gforms_settings_wrap #pdfextended-settings h3:nth-of-type(2),
+.gforms_settings_wrap #tab_gravityformsmailchimp form:nth-of-type(2) h3,
+.gforms_settings_wrap .delete-alert,
+.gf_update_expired,
+#gravity_addon_browser,
+#toplevel_page_gf_edit_forms .wp-submenu a[href="admin.php?page=gf_system_status"],
+#toplevel_page_gf_edit_forms .wp-submenu a[href="admin.php?page=gf_help"] {
+  display: none;
+}
+
+/* Manage Sidebars */
+#sidebar-manager .sidebar-name-arrow,
+#sidebar-manager .widget-description {
+  display: none !important;
+}
+
+#sidebar-manager .sidebar-description {
+  margin: 1em 1em 0;
+}
+
+#sidebar-manager .widgets-holder-wrap {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+#sidebar-manager #widget-list .widget.ui-draggable {
+  margin: 5px;
+}
+
+#sidebar-manager #normal-sortables .sidebar-name {
+  height: 15px;
+  background-color: #fff;
+}
+
+#sidebar-manager #normal-sortables .sidebar-name h3 {
+  display: none;
+}
+
+#sidebar-manager #normal-sortables .sidebar-description {
+  margin: 0;
+}
+
+/* Aurora-cise your Wordpress Banner. */
+#wpadminbar {
+  background-color: #08193a !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#wpadminbar #wp-toolbar #wp-admin-bar-root-default #wp-admin-bar-wp-logo,
+#wpadminbar #wp-toolbar #wp-admin-bar-root-default #wp-admin-bar-aurora-logo {
+  background-color: transparent !important;
+}
+
+#wpadminbar #wp-toolbar #wp-admin-bar-root-default #wp-admin-bar-wp-logo a,
+#wpadminbar #wp-toolbar #wp-admin-bar-root-default #wp-admin-bar-aurora-logo a {
+  background-color: transparent !important;
+  background-image: url(logo.png);
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  width: 120px;
+}
+
+#wpadminbar #wp-toolbar #wp-admin-bar-root-default #wp-admin-bar-wp-logo a:hover,
+#wpadminbar #wp-toolbar #wp-admin-bar-root-default #wp-admin-bar-aurora-logo a:hover {
+  background-color: #333 !important;
+}
+
+#wpadminbar #wp-toolbar #wp-admin-bar-root-default #wp-admin-bar-wp-logo a .ab-icon,
+#wpadminbar #wp-toolbar #wp-admin-bar-root-default #wp-admin-bar-aurora-logo a .ab-icon {
+  display: none;
+}
+
+#sidebar-manager #home0,
+#sidebar-manager #home1,
+#sidebar-manager #home2,
+#sidebar-manager #home3,
+#sidebar-manager #home4,
+#sidebar-manager #home5,
+#sidebar-manager #home6,
+#sidebar-manager #home7,
+#sidebar-manager #home8,
+#sidebar-manager #home9,
+#sidebar-manager #home10,
+#sidebar-manager #home11,
+#sidebar-manager #home12,
+#sidebar-manager #home13,
+#sidebar-manager #home14,
+#sidebar-manager #home15,
+#sidebar-manager #home16,
+#sidebar-manager #home17,
+#sidebar-manager #home18,
+#sidebar-manager #home19,
+#sidebar-manager #home20,
+#sidebar-manager #home21,
+#sidebar-manager #home22,
+#sidebar-manager #home23,
+#sidebar-manager #home24,
+#sidebar-manager #home25,
+#sidebar-manager #home26,
+#sidebar-manager #home27,
+#sidebar-manager #home28,
+#sidebar-manager #home29,
+#sidebar-manager #home30,
+#sidebar-manager #home31,
+#sidebar-manager #home32,
+#sidebar-manager #home33,
+#sidebar-manager #home34,
+#sidebar-manager #home35,
+#sidebar-manager #home36,
+#sidebar-manager #home37,
+#sidebar-manager #home38,
+#sidebar-manager #home39,
+#sidebar-manager #home40,
+#sidebar-manager #home41,
+#sidebar-manager #home42,
+#sidebar-manager #home43,
+#sidebar-manager #home44,
+#sidebar-manager #home45,
+#sidebar-manager #home46,
+#sidebar-manager #home47,
+#sidebar-manager #home48,
+#sidebar-manager #home49,
+#sidebar-manager #home50,
+#sidebar-manager #home51,
+#sidebar-manager #home52,
+#sidebar-manager #home53,
+#sidebar-manager #home54,
+#sidebar-manager #home55,
+#sidebar-manager #home56,
+#sidebar-manager #home57,
+#sidebar-manager #home58,
+#sidebar-manager #home59,
+#sidebar-manager #home60 {
+  display: none;
+}
+
+/* Flexible Post Widget: Settings */
+.dpe-fp-widget .section.getemby .category-tabs {
+  background-image: none;
+  background: #cccccc;
+}
+
+.dpe-fp-widget .section.getemby .category-tabs li {
+  margin: 0 .2em .35em 0;
+  border-radius: 3px;
+  border: 1px solid #aaaaaa;
+}
+
+.dpe-fp-widget .section.templates {
+  display: none;
+}
+
+/* Settings Page: Adding in some extra text... */
+#blog-public + label:before,
+#blog-norobots + label:before {
+  display: inline;
+  content: 'Public Access: ';
+  font-weight: bold;
+  color: #000;
+}
+
+#blc-sidebar,
+#blc-plugin-news-link-wrap,
+#blc-feedback-widget-wrap {
+  display: none;
+}
+
+#wpmu-install-dashboard {
+  display: none;
+}
+
+.wp-admin #templateside {
+  display: none;
+}
+
+#screen-meta-links {
+  position: fixed;
+  right: 0;
+  z-index: 9999;
+}
+
+.wpmud  #screen-meta {
+	display:none;
+}
+
+#screen-meta {
+  display: block;
+  z-index: 9999;
+  position: fixed;
+  width: auto;
+  border-color: rgba(36, 82, 118, 0.2);
+  color: #31708f;
+  background-color: #d9edf7;
+  border-left: 4px solid #245276;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2) !important;
+  width: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#screen-meta .metabox-prefs label {
+  width: 23%;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+  padding-right: 5px;
+}
+
+@media (max-width: 1350px) {
+  #screen-meta .metabox-prefs label {
+    width: 32%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #screen-meta .metabox-prefs label {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1700px) {
+  #screen-meta .metabox-prefs label {
+    width: 19%;
+  }
+}
+
+#screen-meta .editor-expand label:nth-last-child(1) {
+  width: 100% !important;
+}
+
+.screen-meta-active {
+  border-color: rgba(36, 82, 118, 0.2) !important;
+  color: #31708f !important;
+  background-color: #d9edf7 !important;
+}
+
+a[href="themes.php?page=uc-js.php"] {
+  color: #D54E21 !important;
+}
+
+a[href="themes.php?page=uc-html.php"] {
+  color: #D54E21 !important;
+}
+
+/*a[href="options-general.php?page=tinymce-advanced"] {
+  color: #D54E21 !important;
+}*/
+
+/*SmartCrawl Settings*/
+.wds-page-desc, .col-half-dashboard-left {
+	display:none !important;
+}
+
+li[data-code=theme_install_unavailable]{
+	display:none !important;
+}
+
+.wpmud .wds-seo-checkup-stats, .wpmud .wds-url-crawler-stats, .wpmud .wds-onboard-dialog .box { /* Hide dumb superhero image */
+	background-image:none !important;
+}
+
+
+.wpmud .wds-report-stats { /* reset padding after image is removed */
+	padding:30px !important;
+}
+
+.wpmud .wds-mascot-message .wds-mascot, .wpmud .wds-disabled-component .wds-disabled-image {
+	display:none !important;
+}
+
+.wpmud .wds-mascot-message .wds-mascot-bubble-container {
+	padding-bottom:30px;
+}
+	
+.so-panels-dialog-edit-widget .dpe-fp-widget .categorydiv li:nth-child(2){
+	display:none;
+}
+
+/* Hide Gutenberg Nag */
+.try-gutenberg-panel{
+	display:none;
+}
+
+/* Hide instagram license tab */
+a[href="?page=sb-instagram-license"], a[href="?page=sb-instagram-feed&tab=support"] { display:none; }
+
+/* Hide activity log banner */
+.aal-install-elementor { display:none; }
+
+/* Hide instagram banner */
+.sbi_welcome_page_notice { display:none; }
+
+/* Hide visualizer pro options */
+.type-box-gauge, .type-box-candlestick, .type-box-timeline, .type-box-combo, .visualizer-pro-only, .viz-group-wrapper .only-pro-feature, #vz-chart-permissions { display:none; }
+
+/* Fix footer being absolutely positioned over content */
+/*#wpfooter {
+	position: relative; 
+}*/
+
+/* Hiding GF PDF template label */
+label[for="gfpdf_settings[template]"], #gfpdf_pdf_form .extensions-upsell {
+  display:none;
+}

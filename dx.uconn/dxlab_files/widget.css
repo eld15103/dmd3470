@@ -1,0 +1,19 @@
+.uconn-daily-digest-widget-class ul {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.uconn-daily-digest-widget-class li.ucdd-category-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0.85rem;
+    color: #999;
+}
+
+.uconn-daily-digest-widget-class li.ucdd-category-title.first {
+    margin-top: 0;
+}
+
+.uconn-daily-digest-widget-class li {
+    margin-bottom: 0.4rem;
+}
