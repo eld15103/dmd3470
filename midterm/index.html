@@ -1,198 +1,227 @@
-<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang=""><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>CSS Showcase Midterm</title>
-    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
-  
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://use.typekit.net/bhe4ibo.css">
-  
-    <meta name="theme-color" content="#fafafa">
-  </head>
-  <body data-new-gr-c-s-check-loaded="14.996.0" data-gr-ext-installed="" class="dark-mode"><header>
-    <div id="header-top">
-      <h1>WELCOME TO</h1>
-      <h2>THE <span id="light">LIGHT</span><span id="dark">DARK</span> SIDE</h2>
-      <button class="type1" onclick="darkside()">Switch Sides</button>
-    </div>
-    <nav>
-      <ul>
-        <li><a class="navclick" href="#about">ABOUT</a></li>
-        <li><a class="navclick" href="#designing">DESIGNING</a></li>
-        <li><a class="navclick" href="#coding">CODING</a></li>
-      </ul>
+
+    <title>Light Mode Vs Dark Mode</title>
+    <link href="mains.css" rel="stylesheet">
+    <link href="extra.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+          document.documentElement.setAttribute("data-theme", "light");
+      
+          var themeSwitcher = document.getElementById("theme-switcher");
+      
+          themeSwitcher.onclick = function() {
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+      
+            var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+      
+            document.documentElement.setAttribute("data-theme", switchToTheme);
+          }
+        });
+      </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+
+     
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header"></div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#theme-switcher">About</a>
+                    </li>
+                    <li>
+                        <a href="#howto">How To</a>
+                    </li>
+                    <li>
+                        <a href="#health">Health</a>
+                    </li>
+                    <li>
+                        <a href="#aesthetic">Aesthetic</a>
+                    </li>
+				</ul>
+            </div>
+        </div>
     </nav>
-  </header>
-  
-  
-    <main>
-    <div id="about" class="center">
-        <h3>WHAT IS DARK MODE?</h3>
-        <div id="about-content">
-        <p>Recently, dark mode has become increasingly popular on mobile devices and even certain destktop applications. Dark mode utilizes a darker background with lighter text.
-          Dark Mode allows for websites to be more accessible for people with light sensitivity or vision problems. With how heavy technology plays a role in today’s society, it is important to make the user experience as accessible as possible.
-          If a user has their browser settings set to a dark mode preference, websites that have implemented a dark mode, such as this one, will automatically be viewed in that preference. Websites can also provide a toggle that allows users to go between the two themes without changing their settings.
-        </p>
-        <img class="center" src="images/example.png" alt="Light vs Dark Mode">
-      </div>
-    </div>
-    <div id="designing" class="center">
-      <h3>
-        DESIGNING A DARK THEME
-      </h3>
-      <p>
-        A proper dark theme is more than just the inverse of the light theme colors.
-        <br>
-        There are four main properties to keep in mind:
-      </p>
-      <div id="four">
-        <div id="contrast">
-          <h4>Contrast</h4>
-          <p>Dark themes should have a contrast high contrast level.</p>
+
+	<div class="jumbotron feature">
+		<div class="container">
+			<h1> Switch It Up </h1>
+			<p>The appeal of dark mode or the classic visual of light mode</p>
+
+                <button id="theme-switcher">Try It!</button>
+		</div>
+	</div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Dark Mode...
+                    <small>The History & Origin</small>
+                </h1>
+                <p>Dark mode tends to go by a few names: black mode, dark theme, night mode, light-on-dark. Dark mode is a theme you could set your browser to. This theme could also be set to certain smartphone applications like Instagram, Twitter, Facebook, Discord, and many more. All of these have helped boost the popularity of this "custom" theme.</p>
+                <p>With that information in mind, you can test it out with the button above. This theme allows for a user's interface (smartphone, laptop, etc) to display a light colored text over a dark or black screen. This being the opposite of light mode, which is the default of all browsers and applications. It's much more familiar and displays a bright white background and dark texts.</p>
+                <p>The idea of dark mode is to reduce the amount of light that devices emitt, while still making it easy for people to read on with a bold enough color contrast. This setting is accessible on both iPhone and Android devices, where you can have a system-wide default. However, not all apps allow that default, and if you are driven enough, you can individually change the themes within the applications themselves.</p>
+                <b class="p-ind-1">What are the general characteristics of dark mode? It overall could be identified by:</b>
+                <p class="p-ind-2"> - Light on dark design dynamic</p>
+                <p class="p-ind-2"> - Inverted color scheme and often having greyscale fonts</p>
+                <p class="p-ind-2"> - A lot of negative space</p>
+                <p class="p-ind-2"> - Neutral colors</p>
+                <p class="p-ind-2"> - Softer color hues and tones</p>
+                <p class="p-ind-2"> - Stark contrast between fore ground and background</p>
+                <p class="p-ind-2"> - Dramatic overtones</p>
+                <p class="p-ind-2"> - Energy conservation</p>
+                <p> Now that we know what it is and how we could recognized it, what is the history behind it? Stemming from the 1980's, where computer users were forced into dark mode. The screens were black and nothing else, with contrasting typography fonts in white or green. Computers were only ever in dark mode, this being their default display. Then how did we get to the default display we see now? White backgrounds with dark texts were actually a way to create a feeling similar to black ink on paper.</p>
+                <p> We have started using dark/night mode more often within the last few years for a few reasons. People saw it as something new and edgy aesthetic, while others heard of it's benefits - battery saving and it being better on the eyes. Read more to understand the health and aesthetics behind this display theme. </p>
+
+
+                <img id="blacknwhite" width="100%" src="https://lh3.googleusercontent.com/pgTa3nA1suThryEsoRszChgrhhEFisnZ8HWA8RYC0LQUzCPXKHq-lO00N0vUNnSxklor7fNBOzAuNqPnN4jRAy4QPcTDI2gjBAC96w=w1064-v0">
+            </div>
         </div>
-        <div id="depth">
-          <h4>Depth</h4>
-          <p>Express elevation and space by creating depth.</p>
+
+        <div class="row">
+            <article class="col-md-4 article-intro">
+                <h3 id="howto">
+                    <a href="https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/">What To Add In Your HTML</a>
+                </h3>
+                <h4>Step 1</h4>
+                <p>First, you need to makesure that your style.css file is attached to your html head.</p>
+                <p> link rel="stylesheet" type="text/css" href="style.css"></p>
+                <h4>Step 2</h4>
+                <p>Next, you need to add the JavaScript into the head section as well in a script.</p>
+                <p> script type="text/javascript"> document.addEventListener("DOMContentLoaded", function(event) { 
+                <p> document.documentElement.setAttribute("data-theme", "dark"); }); /script> </p>
+            </article>
+            <article class="col-md-4 article-intro">
+                <h3>
+                    <a href="https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/">What To Add In Your CSS</a>
+                </h3>
+                <h4>Step 3</h4>
+                <p>Adding the CSS is fairly simple. Especially if you follow along to the tutorial! Start with the following code to set a defualt light theme.</p>
+                <p>:root {
+                    --background-color: #fff;
+                    --text-color: #000;
+                  }</p>
+                <p>
+                    [data-theme="dark"] {
+                        --background-color: #3F3F3F;
+                        --text-color: #fff;
+                      }
+                </p>
+                <p>
+                    body {
+                        background-color: var(--background-color);
+                        color: var(--text-color);
+                      }
+                </p>
+            </article>
+
+            <article class="col-md-4 article-intro">
+                <h3>
+                    <a href="https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/">Creating a Button To Switch</a>
+                </h3>
+                <h4>Step 4</h4>
+                <p>Replace the old JavaScript code in the head section with the following:</p>
+                <p>script type="text/javascript"> document.addEventListener("DOMContentLoaded", function(event) { 
+                    <p> document.documentElement.setAttribute("data-theme", "dark"); }); </p>
+                <p>var themeSwitcher = document.getElementById("theme-switcher");</p>
+                <p>themeSwitcher.onclick = function() {
+                    var currentTheme = document.documentElement.getAttribute("data-theme");</p>
+                <p>var switchToTheme = currentTheme === "dark" ? "light" : "dark"</p>
+                <p>document.documentElement.setAttribute("data-theme", switchToTheme);}); /script></p>
+            </article>
         </div>
-        <div id="desat">
-          <h4>Desaturation</h4>
-          <p>Primary colors should be desaturated.</p>
+        <div class="row">
+            <article class="col-md-4 article-intro">
+                <iframe src="https://giphy.com/embed/xThuWu82QD3pj4wvEQ" width="100%" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/xThuWu82QD3pj4wvEQ">via GIPHY</a></p>
+            </article>
+            <article class="col-md-4 article-intro">
+                <h3>
+                    <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode">Another Method</a>
+                </h3>
+                <h4>Not feeling like trying out that first one?</h4>
+                <p>Whether it's because you're not a fan of JavaScript, or just not as comfortable, you can still create a dark/light mode in another way!</p>
+                <p> style> body {padding:25px; background-color: white; color: black; font-size: 25px; }</p>
+                <p> .dark-mode {background-color: black; color: white;}  /style></p>
+                <p> body>  button onclick="myFunction()"> Button Title  /button> < /body> </p>
+                <p> script> function myFunction() {var element=document.body; element.classList.toggle(dark-mode);} < /script></p>
+            </article>
+            <article class="col-md-4 article-intro">
+                <iframe src="https://giphy.com/embed/ZY3W96Mvat8EFTCclA" width="100%" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/css-html-web-designer-quotes-ZY3W96Mvat8EFTCclA">via GIPHY</a></p>
+            </article>
         </div>
-        <div id="limit">
-          <h4>Limited Color</h4>
-          <p>Limit the amount of color accents.</p>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header" id="health" style="background: rgb(110, 180, 209, 0.3);">Dark vs Light...
+                    <small>Is It Actually Good For You?</small>
+                </h1>
+                <p >You thought dark mode was good for your eyes right? Well, not really. Though you might think dark mode is better for you -especially with that being the objective with that theme- it really isn't all that great for you. Overall, dark mode is the ideal setting in dimly lit conditions. It may be easy for a lot people to read, but it's much harder for people who have astigmatisms. According to the American Optometric Association, 30% of people have a form of this condition. Astigmatisms affect focus and makes it more difficult for people to read light text on dark backgrounds.</p>
+                <p>The idea of dark mode is to reduce the amount of light that devices emitt, while still making it easy for people to read on with a bold enough color contrast. This setting is accessible on both iPhone and Android devices, where you can have a system-wide default. However, not all apps allow that default, and if you are driven enough, you can individually change the themes within the applications themselves.</p>
+                <p></p>
+                <p></p>
+            </div>
+    
         </div>
-      </div>
-      <p>Dark themes are built using layers. One layer is the background, this layer is usually #121212.
-        It is important to note that if designing for Apple, Apple standards are a background of #000000. A good way to remember this is that "Only a Sith deals in absolutes." 
-        Only Apple tends to use a pure black for their background color. The other layer
-        is a semi-transparent overlay. When choosing an overlay, there is the option of white or a shade of color. This shade will be referred to as the primary.
-        In dark mode, the primary color will shift to a desaturated color shade. Choosing a color shade can help to keep the brand image while in dark mode. 
-      </p>
-      <img class="center" src="images/example-tint.png" alt="An example of a tint">
-      
+    
     </div>
-    <div id="coding" class="center">
-      <h3>CODING A DARK THEME</h3>
-      <p>Firstly, make sure your website is fully created in HTML before adding the dark theme through CSS. This will make it much easier to keep track of variables.
-        There are two ways to go about implementing a dark theme.
-      </p>
-      <div id="query">
-        <div>
-        <p>The first way to implement a dark theme is to automatically do it for the user. To determine which theme the website should display to the user upon first loading, the user's settings will be read. This can be done by creating a media query.
-          Prefers-color-scheme checks if your user preferes light or dark off of their browser settings. Based off of those settings, you can set certain settings for both themes.
-          Keep in mind, only certain browsers allow you to read the user's settings.
-        </p>
-        <pre>      @media (prefers-color-scheme: light){
-          h1{
-            color: black;
-          }
-        }
-        @media (prefers-color-scheme: dark){
-          h1{
-            color: white;
-          }
-        }
-        </pre>
-      </div>
-        <img class="center" src="images/media.JPG" alt="Light vs Dark Mode">
-    </div>
-      <p>If you would rather make a toggle between the light and dark mode, the easiest way is to use a tiny bit of JavaScript.
-        JavaScript allows for a function to be made that can determine whether or not the dark mode has been activated.
-        When the toggle is switched, dark mode will be activated. When dark mode is activated, all the CSS variables for dark mode will be activated.
-        If our toggle class name were to be called dark-mode, the CSS code would look like:
-      </p>
-      <div id="tog">
-        <pre>      h1{
-          color: black;
-        }
-        .dark-mode h1{
-          color: white;
-        }
-      </pre>
-   
-      
-      <a href="https://codepen.io/henryegloff/pen/Eqwzeb"><img class="center" src="images/toggle.JPG" alt="Example of toggle"></a>
-      </div>
-      <p>If you want to read the user's settings and have a toggle (like this website), you will again use JavaScript.
-        The first part is creating the toggle (for more about the toggle, click on the CodePen link above) and the second part
-        activates the toggle upon first loading the website based off of the user's settings. By using this way, you do not have to use media queries in your CSS.
-        The JavaScript can be placed into your HTML like so:
-      </p>
-      <img class="center" id="java" src="images/java.JPG" alt="JavaScript Screenshot">
-  
-      <p>
-        Now to add in the primary color and create depth, we use rgba instead of hex values. 
-        RGBA allows us to control the alpha transparency through the "a" value.
-        If white is the primary color, the hex value #FFFFFF will be converted to RGB(255,255,255).
-        For the alpha value, the higher the percentage, the more it is seen. In dark mode,
-        the more emphasized areas should have a 6% alpha value, and the less emphasized can have a 3%.
-        Notice how on this website, the header and footer have a 6% alpha value, whereas the body has 3%.
-        The font color should also be converted into rgba in dark mode. For emphasized text, the alpha value
-        should be 87%. If there is any text that does not require high empahsis, consider dropping it to a medium
-        emphasis of a 60% alpha value.
-      </p>
-      <pre>      .dark-mode body{
-          background-color: #121212;
-        }
-  
-        .dark-mode h1{
-          color: (255,255,255,87%);
-          background-color: (255,255,255,6%)
-        }
-        
-      </pre>
-    </div>
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
-  
-    <!-- Add your site or application content here -->
-    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-  
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-      function darkside() {
-        var element = document.body;
-        element.classList.toggle("dark-mode")
-      }
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      // dark mode
-      var element = document.body;
-      element.classList.toggle("dark-mode")
-  }
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async=""></script>
-  </main>
-  
-  
-  <footer>
-    <h1>HELPFUL LINKS</h1>
-    <ul>
-      <li><a href="https://blog.weekdone.com/why-you-should-switch-on-dark-mode/">BENEFITS OF DARK MODE</a></li>
-      <li><a href="https://material.io/design/color/dark-theme.html">MATERIAL DESIGN STANDARDS</a></li>
-      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">BROWSER COMPATIBILITY</a></li>
-    </ul>
-  </footer>
-  
-  
-  <div id="highlighter--hover-tools" style="display: none;">
-      <div id="highlighter--hover-tools--container">
-          <div class="highlighter--icon highlighter--icon-copy" title="Copy"></div>
-          <div class="highlighter--separator"></div>
-          <div class="highlighter--icon highlighter--icon-change-color" title="Change Color"></div>
-          <div class="highlighter--separator"></div>
-          <div class="highlighter--icon highlighter--icon-delete" title="Delete"></div>
-      </div>
-  </div></body></html>
+
+    
+	
+	<footer>
+		<div class="footer-blurb">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 footer-blurb-item">
+						<h3 id="aesthetic">The Aesthetic</h3>
+						<p>What is the aesthetic of dark mode? For a lot of people, it's the drastic change between what they normally see and how piercing it can be on the eyes. An appeal could be that it can be used both during the day and night time. Dark mode has been an aesthtic for all ages because of this darker color scheme that allows sufficient color contrast regardless to the background's appearance. Using these dark colors allows for a great contrast between foreground and background for those looking at this display setting.</p>
+                        <p>Overall, dark mode has become this aesthetic trend that applications and users of all devices can embrace. Twitter has been one of the latest applications trying to convert their platform to have a dark mode interface for its users. This will always come down to the personal preference though. A lot of the time, users who gravitate to the dark mode feature are usually night crawlers. They tend to rely on the night mode setting to give their eyes a small bit to recuperate from bright screens. Besides the night crawlers, the shade of black used in dark mode allows viewers to experience more vivid and dynamic colors. But of course, the aesthetic of dark mode is based on who you ask and what they benefit from it. </p>
+                        <p> How many people do you know that have dark/night mode theme set on their devices? </p>
+                        <p> Share and the fill out the form down below!</p>
+                        <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSerQGjmP5o5SV_r1zMJKBjUzFhw-QrpFXeFVxY17h3quFqnZg/viewform?usp=sf_link"> <button class="btn-form">Survey Form</button></a></p>
+					</div>
+					<div class="col-sm-4 footer-blurb-item">
+                    <div class="col-gif">
+						<iframe src="https://giphy.com/embed/3o7TKNbCswyI8YcG40" width="100%" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/oneplus-3o7TKNbCswyI8YcG40">via GIPHY</a></p>
+					</div>
+                    </div>
+					<div class="col-sm-4 footer-blurb-item">
+						<h3>The Benefits</h3>
+						<p>It may feel like now after reading all the negatives of dark mode, you may feel that there's nothing good about. Which is far from the truth. Some benefits include: </p>
+                        <p class="p-ind-3"> - It helps save battery life. Devices with OLED and AMOLED displays are unique from older displays. With every individual pixel lit with an all-white-background, it drains batteries faster.</p>
+                        <p class="p-ind-3"> - Reduces screen glare and blue light exposure. Blue light is a high-energy visible light spectrum with the shortest wavelength. The biggest natural source of blue light for human beings is the Sun, but our phones emit trace amounts of blue light, too. Blue light has been known to disrupt natural sleep patterns!</p>
+                        <p class="p-ind-3"> - Makes it easier on your eyes when looking at a screen in a dark room</p>
+                        <p class="p-ind-3"> - It makes anything on your interface more dramatic and colorful content more dynamic</p>
+                        <p class="p-ind-3"> - It's able to create soothing emotion for its users, while optimizing the feeling of luxury on any devices that it's on</p>
+                        <p>Read more about the benefits of dark mode by clicking on the button below!</p>
+						<p><a class="btn btn-default" href="https://blog.weekdone.com/why-you-should-switch-on-dark-mode/">Benefits</a></p>
+					</div>
+				</div>
+			</div>
+        </div>
+
+        <div class="small-print">
+        	<div class="container">
+        		<p>Created by Emilee Daddio with &#128151 & &#129504 power</p>
+                <a href="sourcesindex.html"><button class="btn btn-default">Click Here For All Sources</button></a>
+        	</div>
+        </div>
+	</footer>
+
+	
+	
+</body>
+
+</html>
