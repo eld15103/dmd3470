@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Picture Element Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Using the &lt;picture&gt; Element</h1>
+            <figure class="quote">
+                <blockquote><code>srcset</code> if you’re lazy, <code>picture</code> if you’re crazy™</blockquote>
+                <figcaption><a href="https://twitter.com/wilto">Mat Marquis</a></figcaption>
+            </figure>
+            
+            <p>
+                Using <code>srcset</code> and <code>sizes</code> is extremely easy, but it places all decisions in the hands of your web browser.
+                You may provide recommendations for the images that are served to your users, but ultimately it's the decision of the web browser.
+            </p>
+            
+            <p>
+                The picture element gives us significantly more control over the images that we serve to our users. As a result, it can be more time-consuming to 
+                configure.
+            </p>
+
+            <hr>
+
+            
+            <h2>Instructions</h2>
+            <ol>
+                <li>Add the <code>picture</code> element to the <code>aside</code>. Set one of our 3 images (in <code>images/</code>) to the default image.</li>
+                <li>Add a <code>source</code> that uses the large image at 945px.</li>
+                <li>Add a <code>source</code> that uses the extra large image at 1100px.</li>
+                <li>Publish this page and submit your link to HuskyCT.</li>
+            </ol>
+        </article>
+
+        <aside>
+            <picture>
+                <source media="(min-width: 1100px)" srcset="extralarge.jpg">
+                    <source media="(min-width: 945px)" srcset="art-large.jpg">
+                        <img src="art-medium.jpg" alt="art">
+            </picture>
+
+
+        </aside>
+
+    </main>
+</body>
+</html>
