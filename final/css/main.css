@@ -1,0 +1,411 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,canvas,iframe,img,svg,video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   div.background {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .background {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+  }
+ 
+  header h1 {
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header p {
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+
+  header button {
+    display: unset;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: normal;
+    border: none;
+    color: white;
+    width: 150px;
+    background-color: #ff6d6d;
+  }
+
+  body {
+    font-family: 'Exo';
+  }
+
+   @font-face {
+    font-family: Exo;
+    src: url(../Exo-VariableFont_wght.ttf);
+    font-family: Exo2;
+    src: url(../Exo-Italic-VariableFont_wght.ttf);
+   }
+
+
+  @media (min-width: 600px) {
+    .form img {
+      position:relative;
+      max-width: 100%;
+      left: 35%;
+    }
+    p.arrow {
+      position: relative;
+      left: 33%;
+      bottom: 10px;
+    }
+  }
+
+  @media (min-width: 1070px) {
+    header h1 {
+      font-size: 60pt;
+      width: 50%;
+    }
+    section.form h2 {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1820px) {
+    .doggos .col-lg-5 img {
+      position: relative;
+      left: 250px;
+    }
+  }
+
+  .newfeature h2, .newfeature h5{
+    text-align: center;
+  }
+
+ .doggos .col-lg-6 h5{
+    padding-top: 100px;
+  }
+
+  .doggos .col-lg-5 img {
+    border-top: 20px solid #ededed; 
+    border-right: 20px solid #ededed;
+  }
+
+  .doggos h5 {
+    color: #ff6d6d;
+  }
+
+  .doggos h2 {
+    font-size: 30pt;
+    padding-bottom: 30px;
+  }
+
+  span {
+    color: #ff6d6d;
+  }
+
+  .doggos p {
+    font-weight: 500;
+    color: #282828;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  picture img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .newfeature {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 400px;
+  }
+
+  .newfeature h5 {
+    color: #ff6d6d;
+  }
+
+  .newfeature h2 {
+    font-size: 30pt;
+    padding-bottom: 50px;
+  }
+
+  .newfeature img {
+    padding-bottom: 20px;
+  }
+
+  .newfeature p {
+    color: #282828;
+    font-weight: 500;
+  }
+
+  .asapproject {
+    padding-bottom: 100px;
+  }
+
+  .asapproject h5 {
+    color: #ff6d6d;
+    font-weight: 400;
+  }
+
+  .asapproject h2 {
+    font-size: 35pt;
+    padding-bottom: 20px;
+  }
+
+  .asapproject p {
+    color: #282828;
+    font-weight: 500;
+  }
+
+  .asapproject img {
+    padding-bottom: 50px;
+  }
+
+  .foundersrow {
+    background-image: url("../images/texturebg.png");
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .foundersrow h3 {
+    color: white;
+  }
+  
+  .foundersrow h5 {
+    color: #ff6d6d;
+  }
+
+  .foundersrow p {
+    color: white;
+    padding-bottom: 30px;
+  }
+
+  .foundersrow img {
+    padding-bottom: 30px;
+  }
+
+  .startnow {
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .startnow p {
+    color: #282828;
+    font-weight: 500;
+    margin-bottom: -2px;
+  }
+
+  .startnow h5 {
+    color: #ff6d6d;
+  }
+
+  .startnow img {
+    padding-top: 80px;
+  }
+
+  section.form {
+    background: #323969;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  section.form h5 {
+    padding-top: 50px;
+    color: #ff6d6d;
+  }
+
+  section.form h2 {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30pt;
+  }
+
+  .form img {
+    text-align: right;
+    max-width: 100%;
+  }
+
+  p.arrow {
+    color: #f6f5f3;
+    display: inline;
+  }
+
+  p.end {
+    color: #f6f5f3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  section.form input {
+    justify-content: space-evenly;
+    margin: 10px;
+
+  }
+
+  section.form input[type=text], .form input[type=password] {
+    background-color: rgba(255, 255, 255, 0.233);
+    border-color: white;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px 50px;
+  }
+
+  section.form input::placeholder {
+    color: white;
+  }
+
+  section.form input p {
+    padding-bottom: 0px;
+  }
+
+  section.form input[type=submit] {
+    background-color: #ff6d6d;
+    color: white;
+    border-color: transparent;
+    border-radius: 3px;
+    padding: 15px 90px;
+  }
+  
+  .square {
+    height: 50px;
+    width: 50px;
+    background-color: #4e4e5e;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  footer {
+    padding-top: 30px;
+  }
+
+  footer h3 {
+    text-align: left;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #282828;
+    font-size: 11pt;
+  }
+
+  footer ul {
+    list-style-position: outside;
+    list-style: none;
+  }
+
+  footer li {
+    color: #282828;
+    font-size: 11pt;
+    font-weight: 500;
+  }
+
+  footer input{
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    border: 1px solid #8d8d8d;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+
+  footer .row {
+    padding-bottom: 10px;
+  }
+
+  footer p {
+    align-content: center;
+    color: #cbcbcb;
+  }
+
+  footer i {
+    padding: 10px 10px;
+  }
+  footer button {
+    background-color: #ff6d6d;
+    border-top: 1px solid #ff6d6d;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    box-shadow: 0 10px 11px -5px #8d8d8d;
+    padding: 10px 15px ;
+    border-radius: 3px;
+    margin-left: -40px;
+
+  }
