@@ -1,0 +1,18 @@
+{margin: 0; padding: 0%;
+
+}
+#contain {
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+}
+#col1 {
+    width: 48%;
+    min-height: 500px;
+    display: inline-block;
+}
+#col2 {
+    width: 48%;
+    min-height: 500px;
+    display: inline-block;
+}
